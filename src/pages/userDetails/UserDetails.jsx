@@ -230,7 +230,7 @@ function UserDetails() {
       key: "action",
       render: () => (
         <button className="" onClick={showModal}>
-          <MdBlockFlipped className="text-[#FF0000] w-10 h-10" />
+          <MdBlockFlipped className="text-[#00c0b5] w-10 h-10" />
         </button>
       ),
     },

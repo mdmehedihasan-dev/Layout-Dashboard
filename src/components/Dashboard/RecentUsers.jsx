@@ -250,7 +250,7 @@ const RecentUsers = () => {
           footer={null}
         >
           <div className="flex flex-col justify-center items-center py-10">
-            <h1 className="text-3xl text-center text-[#FF0000]">
+            <h1 className="text-3xl text-center text-[#00c0b5]">
               Are you sure!
             </h1>
             <p className="text-xl text-center mt-5">
@@ -259,7 +259,7 @@ const RecentUsers = () => {
             <div className="text-center py-5 w-full">
               <button
                 onClick={() => setIsModalOpen(false)}
-                className="bg-[#FF0000] text-white font-semibold w-1/3 py-3 px-5 rounded-lg"
+                className="bg-[#00c0b5] text-white font-semibold w-1/3 py-3 px-5 rounded-lg"
               >
                 CONFIRM
               </button>
