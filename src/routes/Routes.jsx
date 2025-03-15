@@ -14,6 +14,8 @@ import TermsCondition from "../pages/settings/TermsCondition";
 import UserDetails from "../pages/userDetails/UserDetails";
 import ProfilePage from "../pages/profile/ProfilePage";
 import VideoList from "../pages/videoList/VideoList";
+import FAQ from "../pages/settings/Faq";
+import Services from "../pages/Services/Services";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +52,18 @@ const router = createBrowserRouter([
         path: "/user-details",
         element: <UserDetails />,
       },
+      // {
+      //   path: "/chat",
+      //   element: <Chat />,
+      // },
+      {
+        path: "/services",
+        element: <Services />,
+      },
+      // {
+      //   path: "/roles",
+      //   element: <Roles />,
+      // },
 
       // settings
       {
@@ -67,6 +81,10 @@ const router = createBrowserRouter([
       {
         path: "/setting/terms-and-condition",
         element: <TermsCondition />,
+      },
+      {
+        path: "/setting/faq",
+        element: <FAQ />,
       },
 
       //  navbar profile

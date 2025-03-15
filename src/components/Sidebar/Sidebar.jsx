@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { FaRegBookmark, FaRegUser } from "react-icons/fa";
 import { IoMdInformationCircleOutline, IoMdSettings } from "react-icons/io";
 import {
+  IoBagAddOutline,
   IoCloseSharp,
   IoLogInOutline,
   IoVideocamOutline,
@@ -10,6 +11,7 @@ import {
 import { RxDashboard } from "react-icons/rx";
 import { MdOutlinePrivacyTip } from "react-icons/md";
 import { SlArrowDown } from "react-icons/sl";
+import { GoQuestion } from "react-icons/go";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   const location = useLocation();
@@ -61,7 +63,20 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             }`}
           >
             <FaRegUser className="w-5 h-5" />
-            <p className="text-lg font-semibold">User Details</p>
+            <p className="text-lg font-semibold">User Table</p>
+          </li>
+        </Link>
+          {/*  Service */}
+          <Link to="/services">
+          <li
+            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${
+              isActive("/services")
+                ? "bg-[#FF0000] text-white px-3 py-3 rounded-l-4xl"
+                : ""
+            }`}
+          >
+            <IoBagAddOutline className="w-5 h-5" />
+            <p className="text-lg font-semibold">Services</p>
           </li>
         </Link>
 
@@ -133,6 +148,18 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <p className="text-lg font-semibold">Terms and Conditions</p>
               </li>
             </Link>
+
+            <Link to="/setting/faq">
+              <li
+                className={`pb-2 flex items-center gap-2 transition-all duration-300 ease-in-out ${
+                  isActive("/setting/faq") ? "text-[#FF0000]" : ""
+                }`}
+              >
+                <GoQuestion className="w-5 h-5 text-lg font-semibold" />
+                <p className="text-lg font-semibold">FAQ</p>
+              </li>
+            </Link>
+
           </ul>
         )}
       </ul>

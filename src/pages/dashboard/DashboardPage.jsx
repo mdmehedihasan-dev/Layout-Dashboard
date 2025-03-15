@@ -4,6 +4,7 @@ import { useState } from "react";
 import dayjs from "dayjs";
 import TotalUser from "../../components/Dashboard/TotalUser";
 import TotalView from "../../components/Dashboard/TotalView";
+import TotalUsers from "../../components/Dashboard/TotalUsers";
 
 function DashboardPage() {
   const currentYear = dayjs().year();
@@ -134,7 +135,11 @@ function DashboardPage() {
           </div>
           <TotalView />
         </div>
+       <div className="mt-5">
+       <TotalUsers />
+       </div>
       </div>
+
       <div className="mt-5">
         <h1 className="text-2xl font-bold mb-5">Recent Joined User</h1>
         <RecentUsers />

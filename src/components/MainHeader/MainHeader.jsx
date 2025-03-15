@@ -7,14 +7,15 @@ const MainHeader = ({ toggleSidebar }) => {
 
   return (
     <div className="relative w-full">
-      <header className="bg-[#FF0000] shadow-sm">
+      <header className="bg-[#00c0b5] shadow-sm">
         <div className="flex justify-between items-center px-5 md:px-10 h-[80px]">
           <div onClick={() => navigate("/")}>
-            <img
+            {/* <img
               src="/header.png"
               className="w-[72px] h-[50px]"
               alt="User Avatar"
-            />
+            /> */}
+            <h1 className="text-3xl text-white font-bold">DASHBOARD</h1>
           </div>
           <div className="flex">
             <div
