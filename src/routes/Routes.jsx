@@ -16,6 +16,8 @@ import ProfilePage from "../pages/profile/ProfilePage";
 import VideoList from "../pages/videoList/VideoList";
 import FAQ from "../pages/settings/Faq";
 import Services from "../pages/Services/Services";
+import Roles from "../pages/Roles/Roles";
+import Chat from "../pages/Chat/Chat";
 
 const router = createBrowserRouter([
   {
@@ -52,18 +54,18 @@ const router = createBrowserRouter([
         path: "/user-details",
         element: <UserDetails />,
       },
-      // {
-      //   path: "/chat",
-      //   element: <Chat />,
-      // },
+      {
+        path: "/chat",
+        element: <Chat />,
+      },
       {
         path: "/services",
         element: <Services />,
       },
-      // {
-      //   path: "/roles",
-      //   element: <Roles />,
-      // },
+      {
+        path: "/roles",
+        element: <Roles />,
+      },
 
       // settings
       {

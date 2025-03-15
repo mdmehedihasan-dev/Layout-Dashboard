@@ -12,6 +12,7 @@ import { RxDashboard } from "react-icons/rx";
 import { MdOutlinePrivacyTip } from "react-icons/md";
 import { SlArrowDown } from "react-icons/sl";
 import { GoQuestion } from "react-icons/go";
+import { TbBrandWechat } from "react-icons/tb";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   const location = useLocation();
@@ -66,8 +67,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             <p className="text-lg font-semibold">User Table</p>
           </li>
         </Link>
-          {/*  Service */}
-          <Link to="/services">
+        {/*  Service */}
+        <Link to="/services">
           <li
             className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${
               isActive("/services")
@@ -77,6 +78,33 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           >
             <IoBagAddOutline className="w-5 h-5" />
             <p className="text-lg font-semibold">Services</p>
+          </li>
+        </Link>
+        {/* Add Roles */}
+        <Link to="/roles">
+          <li
+            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${
+              isActive("/roles")
+                ? "bg-[#00C0B5] text-white px-3 py-3 rounded-l-4xl"
+                : ""
+            }`}
+          >
+            <IoBagAddOutline className="w-5 h-5" />
+            <p className="text-lg font-semibold">Roles</p>
+          </li>
+        </Link>
+
+        {/* Chat */}
+        <Link to="/chat">
+          <li
+            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${
+              isActive("/chat")
+                ? "bg-[#00C0B5] text-white px-3 py-3 rounded-l-4xl"
+                : ""
+            }`}
+          >
+            <TbBrandWechat className="w-5 h-5" />
+            <p className="text-lg font-semibold">Chat</p>
           </li>
         </Link>
 
@@ -159,7 +187,6 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <p className="text-lg font-semibold">FAQ</p>
               </li>
             </Link>
-
           </ul>
         )}
       </ul>
