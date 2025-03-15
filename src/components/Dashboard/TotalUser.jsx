@@ -66,8 +66,8 @@ const TotalUser = () => {
         >
           <defs>
             <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#FF0000" stopOpacity={1} />
-              <stop offset="95%" stopColor="#FF0000" stopOpacity={0} />
+              <stop offset="5%" stopColor="#00c0b5" stopOpacity={1} />
+              <stop offset="95%" stopColor="#00c0b5" stopOpacity={0} />
             </linearGradient>
           </defs>
           <XAxis
@@ -85,7 +85,7 @@ const TotalUser = () => {
           <Area
             type="monotone"
             dataKey="netRevenue"
-            stroke="#FF0000"
+            stroke="#00c0b5"
             fillOpacity={1}
             fill="url(#colorPv)"
           />

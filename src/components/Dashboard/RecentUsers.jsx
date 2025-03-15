@@ -204,7 +204,7 @@ const RecentUsers = () => {
       key: "action",
       render: () => (
         <button onClick={showModal}>
-          <MdBlockFlipped  className="text-[#FF0000] w-8 h-8" />
+          <MdBlockFlipped  className="text-[#00c0b5] w-8 h-8" />
         </button>
       ),
     },
@@ -216,21 +216,21 @@ const RecentUsers = () => {
         theme={{
           components: {
             InputNumber: {
-              activeBorderColor: "#FF0000",
+              activeBorderColor: "#00c0b5",
             },
             Pagination: {
-              colorPrimaryBorder: "#FF0000",
-              colorBorder: "#FF0000",
-              colorPrimaryHover: "#FF0000",
-              colorTextPlaceholder: "#FF0000",
-              itemActiveBgDisabled: "#FF0000",
-              colorPrimary: "#FF0000",
+              colorPrimaryBorder: "#00c0b5",
+              colorBorder: "#00c0b5",
+              colorPrimaryHover: "#00c0b5",
+              colorTextPlaceholder: "#00c0b5",
+              itemActiveBgDisabled: "#00c0b5",
+              colorPrimary: "#00c0b5",
             },
             Table: {
-              headerBg: "#FF0000",
+              headerBg: "#00c0b5",
               headerColor: "rgb(255,255,255)",
               cellFontSize: 16,
-              headerSplitColor: "#FF0000",
+              headerSplitColor: "#00c0b5",
             },
           },
         }}

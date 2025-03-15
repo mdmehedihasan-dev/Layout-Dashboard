@@ -69,8 +69,8 @@ function DashboardPage() {
                   onClick={() => setIsOpen(!isOpen)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md flex justify-between items-center bg-white transition"
                 >
-                  <span className="text-[#FF0000]">{selectedYear}</span>
-                  <FaChevronDown className="text-[#FF0000] w-5 h-5 ml-5" />
+                  <span className="text-[#00c0b5]">{selectedYear}</span>
+                  <FaChevronDown className="text-[#00c0b5] w-5 h-5 ml-5" />
                 </button>
 
                 {/* Dropdown List */}
@@ -110,8 +110,8 @@ function DashboardPage() {
                   onClick={() => setIsOpen(!isOpen)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md flex justify-between items-center bg-white transition"
                 >
-                  <span className="text-[#FF0000]">{selectedYear}</span>
-                  <FaChevronDown className="text-[#FF0000] w-5 h-5 ml-5" />
+                  <span className="text-[#00c0b5]">{selectedYear}</span>
+                  <FaChevronDown className="text-[#00c0b5] w-5 h-5 ml-5" />
                 </button>
 
                 {/* Dropdown List */}

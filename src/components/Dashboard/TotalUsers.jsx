@@ -31,8 +31,8 @@ const TotalUsers = () => {
       return (
         <div className="bg-white py-2 px-3 rounded shadow border">
           <p className="text-black font-semibold">{`Month: ${month}`}</p>
-          <p className="text-[#16167A]">{`App Users: ${appUsers}`}</p>
-          <p className="text-[#FF0000]">{`Active Users: ${activeUsers}`}</p>
+          <p className="text-[#00C0B5]">{`App Users: ${appUsers}`}</p>
+          <p className="text-[#0084BF]">{`Active Users: ${activeUsers}`}</p>
         </div>
       );
     }
@@ -53,14 +53,14 @@ const TotalUsers = () => {
         <Legend />
         <Bar
           dataKey="appUsers"
-          fill="#FF0000"
+          fill="#00C0B5"
           barSize={30}
           radius={[5, 5, 0, 0]}
           name="App Users"
         />
         <Bar
           dataKey="activeUsers"
-          fill="#16167A"
+          fill="#0084BF"
           barSize={30}
           radius={[5, 5, 0, 0]}
           name="Active Users"
